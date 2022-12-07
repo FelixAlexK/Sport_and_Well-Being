@@ -19,21 +19,18 @@ public class LoginController {
     }
     @FXML
     private Label welcomeText;
-    @FXML // fx:id="login_headerLabel"
-    private Label login_headerLabel; // Value injected by FXMLLoader
+    @FXML
+    private TextField loginPassword_textField;
 
-    @FXML // fx:id="username_textField"
-    private TextField username_textField; // Value injected by FXMLLoader
+    @FXML
+    private TextField loginUsername_textField;
 
-    @FXML // fx:id="login_button"
-    private Button login_button; // Value injected by FXMLLoader
+    @FXML
+    private Button login_button;
 
-    @FXML // fx:id="register_link"
-    private Hyperlink register_link; // Value injected by FXMLLoader
+    @FXML
+    private Hyperlink register_link;
 
-    @FXML // fx:id="password_textField"
-    private TextField password_textField; // Value injected by FXMLLoader
-
-    public void onHelloButtonClick(ActionEvent actionEvent) {
-    }
+    @FXML
+    private Label login_header;
 }

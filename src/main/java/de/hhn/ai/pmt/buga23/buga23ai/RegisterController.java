@@ -13,19 +13,19 @@ public class RegisterController {
 
     }
     @FXML
+    private Label register_header;
+
+    @FXML
     private Hyperlink login_link;
 
     @FXML
-    private Button register_Button;
-
-    @FXML
-    private TextField registerConfirmPassword_textField;
+    private TextField registerConfirmPassword_textField1;
 
     @FXML
     private TextField registerUsername_textField;
 
     @FXML
-    private Label register_headerLabel;
+    private Button register_button;
 
     @FXML
     private TextField registerPassword_textField;
