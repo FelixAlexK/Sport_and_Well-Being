@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="ormmapping:KlassendiagrammPMT.cfg.xml/Hibernate" uuid="9b70cb86-fb2c-4980-9ed2-9b9a0cec47fe">
+      <driver-ref>mariadb</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>Hibernate
+
+C:/Users/pgaug/Documents/0_Studium_0/Semester 3/PM&amp;TSWE/BugaSportWellbeingCode/src/ormmapping/KlassendiagrammPMT.cfg.xml</remarks>
+      <jdbc-driver>org.mariadb.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mariadb://141.7.66.47:3306/buga23sportwellbeing</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+  </component>
+</project>
