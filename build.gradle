@@ -37,6 +37,10 @@ dependencies {
 
     testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
+
+    implementation fileTree(dir: "../BugaSportWellbeingCode/BugaSportWellbeingCode/lib", include: "*.jar")
+    implementation files("../BugaSportWellbeingCode/BugaSportWellbeingCode/classes")
+
 }
 
 test {
@@ -54,3 +58,8 @@ jlink {
 jlinkZip {
     group = 'distribution'
 }
+
+ant.importBuild('../BugaSportWellbeingCode/BugaSportWellbeingCode/build.xml') { antTarget ->
+    'ant-' + antTarget
+}
+compileJava.dependsOn "ant-compile"
