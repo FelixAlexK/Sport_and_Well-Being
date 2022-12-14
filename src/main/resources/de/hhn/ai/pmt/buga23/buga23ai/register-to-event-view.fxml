@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.hhn.ai.pmt.buga23.buga23ai.RegisterToEventController">
+   <children>
+      <Label fx:id="labelEventName" text="EventName">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="6.0" left="6.0" right="6.0" top="30.0" />
+         </VBox.margin>
+      </Label>
+      <HBox alignment="TOP_CENTER">
+         <children>
+            <Label text="Animator">
+               <HBox.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Region prefWidth="40.0" />
+            <Label fx:id="labelAnimatorName" text="AnimatorName">
+               <HBox.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+         <VBox.margin>
+            <Insets top="60.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="TOP_CENTER">
+         <children>
+            <Label text="Date">
+               <HBox.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Region prefWidth="40.0" />
+            <Label fx:id="labelEventDate" text="EventDate">
+               <HBox.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+         <VBox.margin>
+            <Insets top="14.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="TOP_CENTER">
+         <children>
+            <Label text="Time">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </HBox.margin>
+            </Label>
+            <Region prefWidth="40.0" />
+            <Label fx:id="labelEventTime" text="EventTime">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+         <VBox.margin>
+            <Insets top="14.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="TOP_CENTER">
+         <children>
+            <Label text="Price">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </HBox.margin>
+            </Label>
+            <Region prefWidth="40.0" />
+            <Label fx:id="labelEventPrice" text="EventPrice">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+         <VBox.margin>
+            <Insets top="14.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="TOP_CENTER">
+         <children>
+            <Label text="Stage Nr.">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </HBox.margin>
+            </Label>
+            <Region prefWidth="40.0" />
+            <Label fx:id="labelStageNumber" text="StageNumber">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+         <VBox.margin>
+            <Insets top="14.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="TOP_CENTER">
+         <children>
+            <Label text="Organizer">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </HBox.margin>
+            </Label>
+            <Region prefWidth="40.0" />
+            <Label fx:id="labelEventProvider" text="EventProvider">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+         <VBox.margin>
+            <Insets top="14.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="TOP_CENTER">
+         <children>
+            <Button fx:id="buttonCancel" mnemonicParsing="false" text="Cancel">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Region prefWidth="100.0" />
+            <Button fx:id="buttonRegister" mnemonicParsing="false" onAction="#onRegisterButtonClick" text="Register">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets top="80.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+</VBox>
