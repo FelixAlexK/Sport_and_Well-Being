@@ -8,9 +8,10 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
+
 <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.hhn.ai.pmt.buga23.buga23ai.RegisterToEventController">
    <children>
-      <Label fx:id="labelEventName" text="EventName">
+      <Label fx:id="labelEventName" text="EventName" VBox.vgrow="NEVER">
          <font>
             <Font name="System Bold" size="26.0" />
          </font>
@@ -18,151 +19,187 @@
             <Insets bottom="6.0" left="6.0" right="6.0" top="30.0" />
          </VBox.margin>
       </Label>
-      <HBox alignment="TOP_CENTER">
+      <HBox alignment="TOP_CENTER" VBox.vgrow="NEVER">
          <children>
-            <Label text="Animator">
-               <HBox.margin>
-                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
-               </HBox.margin>
-               <font>
-                  <Font size="16.0" />
-               </font>
-            </Label>
-            <Region prefWidth="40.0" />
-            <Label fx:id="labelAnimatorName" text="AnimatorName">
-               <HBox.margin>
-                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
-               </HBox.margin>
-               <font>
-                  <Font size="16.0" />
-               </font>
-            </Label>
+            <HBox>
+               <children>
+                  <Label text="Animator" HBox.hgrow="NEVER">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Region prefWidth="40.0" HBox.hgrow="NEVER" />
+                  <Label fx:id="labelAnimatorName" contentDisplay="RIGHT" text="AnimatorName" HBox.hgrow="NEVER">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
          </children>
          <VBox.margin>
             <Insets top="60.0" />
          </VBox.margin>
       </HBox>
-      <HBox alignment="TOP_CENTER">
+      <HBox alignment="TOP_CENTER" VBox.vgrow="NEVER">
          <children>
-            <Label text="Date">
-               <HBox.margin>
-                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
-               </HBox.margin>
-               <font>
-                  <Font size="16.0" />
-               </font>
-            </Label>
-            <Region prefWidth="40.0" />
-            <Label fx:id="labelEventDate" text="EventDate">
-               <HBox.margin>
-                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
-               </HBox.margin>
-               <font>
-                  <Font size="16.0" />
-               </font>
-            </Label>
+            <HBox>
+               <children>
+                  <Label text="Date" HBox.hgrow="NEVER">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Region prefWidth="40.0" HBox.hgrow="NEVER" />
+                  <Label fx:id="labelEventDate" contentDisplay="RIGHT" text="EventDate" HBox.hgrow="NEVER">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
          </children>
          <VBox.margin>
             <Insets top="14.0" />
          </VBox.margin>
       </HBox>
-      <HBox alignment="TOP_CENTER">
+      <HBox alignment="TOP_CENTER" VBox.vgrow="NEVER">
          <children>
-            <Label text="Time">
-               <font>
-                  <Font size="16.0" />
-               </font>
-               <HBox.margin>
-                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
-               </HBox.margin>
-            </Label>
-            <Region prefWidth="40.0" />
-            <Label fx:id="labelEventTime" text="EventTime">
-               <font>
-                  <Font size="16.0" />
-               </font>
-               <HBox.margin>
-                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
-               </HBox.margin>
-            </Label>
+            <HBox>
+               <children>
+                  <HBox>
+                     <children>
+                        <Label text="Time">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Region prefWidth="40.0" />
+                        <Label fx:id="labelEventTime" contentDisplay="RIGHT" text="EventTime">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
          </children>
          <VBox.margin>
             <Insets top="14.0" />
          </VBox.margin>
       </HBox>
-      <HBox alignment="TOP_CENTER">
+      <HBox alignment="TOP_CENTER" VBox.vgrow="NEVER">
          <children>
-            <Label text="Price">
-               <font>
-                  <Font size="16.0" />
-               </font>
-               <HBox.margin>
-                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
-               </HBox.margin>
-            </Label>
-            <Region prefWidth="40.0" />
-            <Label fx:id="labelEventPrice" text="EventPrice">
-               <font>
-                  <Font size="16.0" />
-               </font>
-               <HBox.margin>
-                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
-               </HBox.margin>
-            </Label>
+            <HBox>
+               <children>
+                  <Label text="Price">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Region prefWidth="40.0" />
+                  <Label fx:id="labelEventPrice" contentDisplay="RIGHT" text="EventPrice">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
          </children>
          <VBox.margin>
             <Insets top="14.0" />
          </VBox.margin>
       </HBox>
-      <HBox alignment="TOP_CENTER">
+      <HBox alignment="TOP_CENTER" VBox.vgrow="NEVER">
          <children>
-            <Label text="Stage Nr.">
-               <font>
-                  <Font size="16.0" />
-               </font>
-               <HBox.margin>
-                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
-               </HBox.margin>
-            </Label>
-            <Region prefWidth="40.0" />
-            <Label fx:id="labelStageNumber" text="StageNumber">
-               <font>
-                  <Font size="16.0" />
-               </font>
-               <HBox.margin>
-                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
-               </HBox.margin>
-            </Label>
+            <HBox>
+               <children>
+                  <Label text="Stage Nr.">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Region prefWidth="40.0" />
+                  <Label fx:id="labelStageNumber" contentDisplay="RIGHT" text="StageNumber">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
          </children>
          <VBox.margin>
             <Insets top="14.0" />
          </VBox.margin>
       </HBox>
-      <HBox alignment="TOP_CENTER">
+      <HBox alignment="TOP_CENTER" VBox.vgrow="NEVER">
          <children>
-            <Label text="Organizer">
-               <font>
-                  <Font size="16.0" />
-               </font>
-               <HBox.margin>
-                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
-               </HBox.margin>
-            </Label>
-            <Region prefWidth="40.0" />
-            <Label fx:id="labelEventProvider" text="EventProvider">
-               <font>
-                  <Font size="16.0" />
-               </font>
-               <HBox.margin>
-                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
-               </HBox.margin>
-            </Label>
+            <HBox>
+               <children>
+                  <Label text="Organizer">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Region prefWidth="40.0" />
+                  <Label fx:id="labelEventProvider" contentDisplay="RIGHT" text="EventProvider">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
          </children>
          <VBox.margin>
             <Insets top="14.0" />
          </VBox.margin>
       </HBox>
-      <HBox alignment="TOP_CENTER">
+      <HBox alignment="CENTER" VBox.vgrow="NEVER">
+         <children>
+            <HBox>
+               <children>
+                  <Label text="Registrations">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Region prefWidth="40.0" />
+                  <Label fx:id="labelNumberRegistarions" contentDisplay="RIGHT" text="NumberRegistrations">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+         <VBox.margin>
+            <Insets top="14.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER" VBox.vgrow="NEVER">
+         <children>
+            <HBox>
+               <children>
+                  <Label text="Free Places">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Region prefWidth="40.0" />
+                  <Label fx:id="labelMaxParticipants" contentDisplay="RIGHT" text="MaxParticipants">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+         <VBox.margin>
+            <Insets top="14.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="TOP_CENTER" VBox.vgrow="NEVER">
          <children>
             <Button fx:id="buttonCancel" mnemonicParsing="false" text="Cancel">
                <font>
@@ -170,7 +207,7 @@
                </font>
             </Button>
             <Region prefWidth="100.0" />
-            <Button fx:id="buttonRegister" mnemonicParsing="false" onAction="#onRegisterButtonClick" text="Register">
+            <Button fx:id="buttonRegister" mnemonicParsing="false" onAction="#onRegisterButtonClick" text="Book">
                <font>
                   <Font size="14.0" />
                </font>

@@ -9,7 +9,6 @@ import java.io.IOException;
 
 public class RegisterToEventApplication extends Application {
 
-
     public static void main(String[] args) {
         launch(args);
     }
